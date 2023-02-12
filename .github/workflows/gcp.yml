@@ -1,4 +1,4 @@
-name: Azure Python 3.9
+name: GCP Python 3.9
 on: [push]
 jobs:
   build:
@@ -11,10 +11,13 @@ jobs:
         python-version: 3.9
     - name: Install dependencies
       run: |
-        make install
+        make install-gcp
     - name: Lint
       run: |
         make lint
     - name: Test
       run: |
         make test
+    - name: Format
+      run: |
+        make format
