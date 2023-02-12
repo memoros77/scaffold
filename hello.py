@@ -1,6 +1,7 @@
 def add(x, y):
+    """This is an add function"""
+
     return x + y
 
 
-result = add(1, 2)
-print(f"This is the sum: 1, 2, {result}")
+print(add(1, 1))
